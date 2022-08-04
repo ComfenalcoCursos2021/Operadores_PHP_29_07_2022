@@ -10,18 +10,34 @@
 </head>
 <body>
     <form id="calculadora" action="https://comfenalcocursos.000webhostapp.com/Operadores_PHP_29_07_2022/api.php" method="POST" data-operador>
-        <label>Ingrese el numero 1</label>
-        <input name="num1" type="number" required>
-        <label>Ingrese el numero 2</label>
-        <input name="num2" type="number" required>
+        <label>Resultado</label>
+        <input name="resultado" type="text" required pattern="[0123456789./*+-]+">
+        <div id="numeros">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="0">
+            <input type="button" value="00">
+            <input type="button" value=".">
+        </div>
         <div>
             <button value="suma">+</button>
             <button value="resta">-</button>
+            <button value="multiplicacion">*</button>
+            <button value="divicion">/</button>
+            <button value="">C</button>
+            <input type="submit" value="=">
         </div>
-        <input type="submit" value="Calcular">
+       
     </form>
-    <div id="resultado">
+    <pre id="resultado">
         
-    </div>
+    </pre>
 </body>
 </html>
